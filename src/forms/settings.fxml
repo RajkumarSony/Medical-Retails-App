@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="840.0" style="-fx-background-color: #fff;" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.settings">
+   <children>
+      <Pane prefHeight="560.0" prefWidth="840.0">
+         <children>
+            <Pane prefHeight="60.0" prefWidth="840.0" style="-fx-background-color: #042736;">
+               <effect>
+                  <DropShadow height="40.0" radius="9.5" width="0.0" />
+               </effect>
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="8.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/user.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="user_name" layoutX="80.0" layoutY="16.0" text="UserName" textFill="WHITE">
+                     <font>
+                        <Font name="Candara" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label layoutX="312.0" layoutY="107.0" text="- : Update  Account : -">
+               <font>
+                  <Font name="Candara" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="48.0" layoutY="502.0" mnemonicParsing="false" onAction="#btn_back" prefHeight="50.0" prefWidth="50.0">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="update" layoutX="570.0" layoutY="512.0" mnemonicParsing="false" onAction="#btn_Update" prefHeight="30.0" prefWidth="108.0" text="   Update">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Settings_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="689.0" layoutY="512.0" mnemonicParsing="false" onAction="#btn_Reset" prefHeight="30.0" prefWidth="108.0" text="   Reset">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8_Maintenance_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="311.0" layoutY="175.0" text="User Name" />
+            <TextField fx:id="tf_user_name" layoutX="310.0" layoutY="196.0" prefHeight="25.0" prefWidth="221.0" />
+            <Label layoutX="311.0" layoutY="236.0" text="Email Id" />
+            <TextField fx:id="tf_email_id" layoutX="310.0" layoutY="257.0" prefHeight="25.0" prefWidth="221.0" />
+            <Label layoutX="311.0" layoutY="297.0" text="Password" />
+            <PasswordField fx:id="tf_password" layoutX="310.0" layoutY="318.0" prefHeight="25.0" prefWidth="221.0" />
+            <Label layoutX="311.0" layoutY="358.0" text="Confirm" />
+            <PasswordField fx:id="tf_confirm_pass" layoutX="310.0" layoutY="379.0" prefHeight="25.0" prefWidth="221.0" />
+            <Hyperlink id="deleteAccount" layoutX="371.0" layoutY="431.0" onAction="#deleteAccount" stylesheets="@../css/setting.css" text="Delete Account ?" textFill="#bf1111" />
+            <Button layoutX="139.0" layoutY="512.0" mnemonicParsing="false" onAction="#btn_Logout" prefHeight="30.0" prefWidth="108.0" text="   Logout">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8_Password_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

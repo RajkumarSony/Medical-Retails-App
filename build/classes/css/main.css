@@ -1,0 +1,85 @@
+
+
+/***************************************************************************************************************/
+
+#main_pane_parShadow{
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 1), 40, 0, 0, 0);
+    -fx-background-color: #042939;  /* #1d1e1e #1e2426; */
+}
+
+/***************************************************************************************************************/
+
+
+#Settings{
+    -fx-background-image: url('/resource/settings.png');
+    -fx-background-color: rgba(0,0,0,0);
+    -fx-background-position: left;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 20px 20px;
+    -fx-text-alignment: right;
+    -fx-padding: 10px;
+    -fx-cursor: HAND;
+
+}
+
+#Settings:hover{
+    /*-fx-background-color: rgba(254,254,254,0.5);*/
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 1),10, 0.45, 0, 0);
+}
+
+/***************************************************************************************************************/
+
+
+#main_pane_logo{
+    /*-fx-background-color : radial-gradient(center 50% 50%, radius 50%, #0e3f68 0%, #082543 100%); // radial-gradient(red, green);*/
+    -fx-background-image: url('/resource/main_background.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100% 100%;
+    -fx-background-position: 0 55;
+}
+
+
+
+/***************************************************************************************************************/
+
+.subPagesLabel{
+    -fx-pref-width: 130px;
+    -fx-pref-height: 100px;
+    -fx-background-color: rgba(0,0,0,0.7);
+    -fx-effect:dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 30, 0,0,0);
+    -fx-background-position: 50% 70%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 30% 30%;
+    -fx-padding: 10px;
+    -fx-text-alignment: center;
+    -fx-text-fill: #fff;
+    -fx-border-width: 1.5px;
+    -fx-wrap-text: true;
+    -fx-background-radius: 30px;
+
+
+}
+
+.subPagesLabel:hover{
+    -fx-background-color: #037879; /*   #2fb4c0; */
+}
+
+
+#main_l_addUser{
+    -fx-background-image: url('/resource/add_user.png');
+}
+
+#main_l_addProduct{
+    -fx-background-image: url('/resource/add.png');
+}
+
+#main_l_customRecord{
+    -fx-background-image: url('/resource/customer_debts.png');
+}
+
+#main_l_debts{
+    -fx-background-image: url('/resource/add_debt.png');
+}
+
+
+/***************************************************************************************************************/

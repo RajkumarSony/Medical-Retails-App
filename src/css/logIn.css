@@ -1,0 +1,24 @@
+#AnchorPane{
+    -fx-background-position: 0% 0%;
+    -fx-background-image: url("/resource/login_background.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 120% 100%;
+   
+}
+
+/*****************************************************************************************************/
+#anchPane_login{
+    -fx-background-color: rgba(0,0,0,0.4);
+    -fx-background-radius: 30px;
+    
+}
+/*****************************************************************************************************/
+#btn_login,#btn_signup{
+    -fx-background-radius: 14px;
+    -fx-background-color: #2fb4c0;
+    -fx-text-fill: #fff;
+}
+/*****************************************************************************************************/
+#btn_login:hover, #btn_signup:hover{
+    -fx-background-color: #23BDE3; 
+}

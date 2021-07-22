@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Medical_Retails_App.jnlp">
+  <information>
+    <title>Medical_Retails_App</title>
+    <vendor>rajku</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Medical_Retails_App.jar" size="1484501" download="eager" />
+    <jar href="lib\calendarfx-view-8.4.0.jar" size="745364" download="eager" />
+    <jar href="lib\mysqlconnector.jar" size="540852" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="controllers.Controllers"  name="Medical_Retails_App" />
+  <update check="always"/>
+</jnlp>
